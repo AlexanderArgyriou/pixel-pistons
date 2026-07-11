@@ -12,6 +12,10 @@ const postsCollection = defineCollection({
 		category: z.string().optional().nullable().default(""),
 		lang: z.string().optional().default(""),
 
+		/* Giscus Comments Integration */
+		commentsEnabled: z.boolean().optional(),
+		discussionNumber: z.number().int().positive().optional(),
+
 		/* For internal use */
 		prevTitle: z.string().default(""),
 		prevSlug: z.string().default(""),
