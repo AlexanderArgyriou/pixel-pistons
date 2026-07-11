@@ -3,7 +3,6 @@ title: "Giscus Comments Setup Guide"
 published: 2026-07-10
 description: "Complete guide to enabling and configuring Giscus comments on blog posts"
 category: "Guide"
-draft: false
 tags: ["Giscus", "Comments", "Setup", "GitHub Discussions"]
 commentsEnabled: true
 draft: true

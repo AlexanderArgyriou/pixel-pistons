@@ -3,7 +3,6 @@ title: "Test Giscus Comments"
 published: 2026-07-10
 description: "Test post for Giscus comments integration"
 category: "Test"
-draft: false
 tags: ["Giscus", "Comments", "Test"]
 commentsEnabled: true
 draft: true
