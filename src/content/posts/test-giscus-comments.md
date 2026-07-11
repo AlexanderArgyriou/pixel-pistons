@@ -6,6 +6,7 @@ category: "Test"
 draft: false
 tags: ["Giscus", "Comments", "Test"]
 commentsEnabled: true
+draft: true
 ---
 
 # Test Giscus Comments

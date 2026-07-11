@@ -6,6 +6,7 @@ category: "Guide"
 draft: false
 tags: ["Giscus", "Comments", "Setup", "GitHub Discussions"]
 commentsEnabled: false
+draft: true
 ---
 
 # Giscus Comments Setup Guide
