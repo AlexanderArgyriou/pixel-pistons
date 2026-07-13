@@ -9,13 +9,13 @@
 ### Key Responsibilities
 
 - Actively maintaining & developing 3 core platforms:
-  - **DXL (Digital Xperience Layer)**: Quarkus middleware with 200+ microservices
-  - **Ecommerce Platform**: In-house Spring Boot platform with 30+ microservices built from scratch
-  - **Retail 10**: Monolith "under deconstruction and modernization" - agent-based platform for physical shops
+  - **DXL (Digital Xperience Layer)**: A Quarkus middleware with 200+ microservices
+  - **Ecommerce Platform**: A Spring Boot platform with 30+ microservices
+  - **Retail 10**: A Monolith "under deconstruction and modernization" - agent-based platform for physical shops
+
 - Providing technical supervision and architectural leadership across three Agile teams (4–7 members each)
 - Researching & investigating meaningful AI integrations, exploring LLM MCP functionalities
 - Providing continuous knowledge transfer through biweekly trainings, presentations, and colleague mentoring
-- Changed entire development flow from git-flow to Scaled Trunk Based Development [STBD], embracing true CI/CD
 
 **Technologies:** Microservices, GitHub Actions, Jenkins, Spring Boot, Quarkus, Docker, Solr, AWS, Kubernetes, Kafka, PostgreSQL, Swagger, OpenSearch, ArgoCD
 
@@ -36,7 +36,7 @@
 - Built from scratch & maintained the new e-commerce platform for Vodafone Greece
 - Led the back-end chapter with full responsibility for development and implementation (during chapter lead absence)
 - Presented reactive programming approach using Spring & WebFlux at Devstaff 2023 meeting
-- Championed Quarkus adoption as middleware technology, explaining advantages of compile-time augmentation vs runtime loading for cloud environments
+- Endorsed Quarkus adoption as middleware technology, explaining advantages of compile-time augmentation vs runtime loading for cloud environments
 - Demonstrated and implemented fully automated CI/CD with GitHub Actions POC
 - Migrated significant portion of legacy Jenkins stack to GitHub's integrated CI/CD platform
 - Implemented local AWS development environment using LocalStack mock and K8s cluster

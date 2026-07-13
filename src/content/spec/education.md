@@ -2,7 +2,7 @@
 
 ---
 
-## Master of Science in Enterprise Information Systems
+## MSc Computer Science
 
 **Neapolis University** | *Pafos, Cyprus* | *2021 – 2022*
 
@@ -18,7 +18,7 @@
 
 ---
 
-## Bachelor of Engineering in Computer Science & Engineering
+## BEng Computer Science & Engineering
 
 **Technological Educational Institute of Western Macedonia** | *Kastoria, Greece* | *2014 – 2020*
 
@@ -36,7 +36,7 @@
 
 ## Certifications
 
-### Java & Spring Academy (120 hours)
+### Java & Spring Academy
 
 *Athens Tech College*
 
