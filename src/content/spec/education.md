@@ -9,6 +9,7 @@
 **Master's Thesis:** Analysis, design and implementation of an enterprise investment decision support system in the cryptocurrency market, based on time-series forecasting and auto-ARIMA models (Spring Boot/React)
 
 **Focus Areas:**
+
 • Enterprise Systems Architecture
 • Information Systems Management
 • Time-Series Forecasting & Predictive Analytics
@@ -24,6 +25,7 @@
 **Bachelor's Thesis:** Hybrid binary voxel map compression based on volume subdivision and run length encoding, without power of 2 limitations. A C++ approach.
 
 **Focus Areas:**
+
 • Software Engineering Fundamentals
 • Data Structures & Algorithms
 • Computer Graphics & 3D Rendering
@@ -39,6 +41,7 @@
 *Athens Tech College*
 
 Comprehensive training in Java ecosystem and Spring Framework, covering:
+
 • Core Java Programming
 • Spring Framework Architecture
 • Spring Boot Development
@@ -52,6 +55,7 @@ Comprehensive training in Java ecosystem and Spring Framework, covering:
 *Amazon Web Services*
 
 Professional certification demonstrating expertise in:
+
 • AWS Core Services (EC2, S3, RDS, Lambda)
 • Cloud Architecture Best Practices
 • Serverless Application Development
