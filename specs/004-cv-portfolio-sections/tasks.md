@@ -26,9 +26,9 @@
 
 **Purpose**: Prepare project for CV portfolio sections with zero impact on existing functionality
 
-- [ ] T001 Verify existing About page pattern by inspecting src/pages/about.astro and src/content/spec/about.md
-- [ ] T002 Verify no dependencies need to be added (all required packages already in package.json)
-- [ ] T003 Create feature branch: `git checkout -b 004-cv-portfolio-sections`
+- [X] T001 Verify existing About page pattern by inspecting src/pages/about.astro and src/content/spec/about.md
+- [X] T002 Verify no dependencies need to be added (all required packages already in package.json)
+- [X] T003 Create feature branch: `git checkout -b 004-cv-portfolio-sections`
 
 **Preservation Check**: ✅ No modifications to existing files in this phase
 
@@ -40,11 +40,11 @@
 
 **⚠️ CRITICAL**: These tasks MUST complete before any user story can begin
 
-- [ ] T004 Add `experience` key to I18nKey enum in src/i18n/i18nKey.ts (after `about = "about",`)
-- [ ] T005 Add `education` key to I18nKey enum in src/i18n/i18nKey.ts (after `experience = "experience",`)
-- [ ] T006 [P] Add Experience translation to src/i18n/languages/en.ts: `[Key.experience]: "Experience",`
-- [ ] T007 [P] Add Education translation to src/i18n/languages/en.ts: `[Key.education]: "Education",`
-- [ ] T008 Run `pnpm check` to verify TypeScript types resolve correctly
+- [X] T004 Add `experience` key to I18nKey enum in src/i18n/i18nKey.ts (after `about = "about",`)
+- [X] T005 Add `education` key to I18nKey enum in src/i18n/i18nKey.ts (after `experience = "experience",`)
+- [X] T006 [P] Add Experience translation to src/i18n/languages/en.ts: `[Key.experience]: "Experience",`
+- [X] T007 [P] Add Education translation to src/i18n/languages/en.ts: `[Key.education]: "Education",`
+- [X] T008 Run `pnpm check` to verify TypeScript types resolve correctly
 
 **Preservation Check**: ✅ Only surgical additions to i18n files (2 enum keys + 2 translations)
 
@@ -60,26 +60,26 @@
 
 ### Implementation for User Story 1
 
-- [ ] T009 [P] [US1] Create src/pages/experience.astro following about.astro pattern
-- [ ] T010 [US1] In experience.astro: Import getEntry, render, MainGridLayout, Markdown, I18nKey, i18n
-- [ ] T011 [US1] In experience.astro: Add getEntry("spec", "experience") with error handling
-- [ ] T012 [US1] In experience.astro: Use MainGridLayout with i18n(I18nKey.experience) for title/description
-- [ ] T013 [US1] In experience.astro: Add card-base div with Markdown component wrapping Content
-- [ ] T014 [P] [US1] Extract professional experience from alex_argyriou_cv (1).pdf manually
-- [ ] T015 [P] [US1] Create src/content/spec/experience.md with H1 heading "Professional Experience"
-- [ ] T016 [US1] In experience.md: Add experience entries in reverse chronological order using data-model.md structure
-- [ ] T017 [US1] In experience.md: Format each entry with H3 headings (Job Title • Company Name)
-- [ ] T018 [US1] In experience.md: Use Unicode bullets (•, ◦) for responsibilities and arrows (→, ⇒) for impact
-- [ ] T019 [US1] In experience.md: Use **bold** for section headers, *italic* for dates/locations
-- [ ] T020 [US1] In experience.md: Separate entries with horizontal rules (---)
-- [ ] T021 [US1] Add Experience navigation link to src/config.ts navBarConfig.links (after About, before GitHub)
-- [ ] T022 [US1] In config.ts: Use format `{ name: "Experience", url: "/experience", external: false }`
-- [ ] T023 [US1] Test in `pnpm dev`: Navigate to http://localhost:4321/experience
-- [ ] T024 [US1] Visual verification: Check layout matches About page (card with padding, proper spacing)
-- [ ] T025 [US1] Visual verification: Verify Unicode symbols (•, ◦, →, ⇒) render correctly
-- [ ] T026 [US1] Visual verification: Toggle light/dark mode - verify text remains readable
-- [ ] T027 [US1] Visual verification: Test mobile view (320px width) - verify no horizontal scroll
-- [ ] T028 [US1] Visual verification: Verify navigation menu shows "Experience" link and highlights when active
+- [X] T009 [P] [US1] Create src/pages/experience.astro following about.astro pattern
+- [X] T010 [US1] In experience.astro: Import getEntry, render, MainGridLayout, Markdown, I18nKey, i18n
+- [X] T011 [US1] In experience.astro: Add getEntry("spec", "experience") with error handling
+- [X] T012 [US1] In experience.astro: Use MainGridLayout with i18n(I18nKey.experience) for title/description
+- [X] T013 [US1] In experience.astro: Add card-base div with Markdown component wrapping Content
+- [X] T014 [P] [US1] Extract professional experience from alex_argyriou_cv (1).pdf manually
+- [X] T015 [P] [US1] Create src/content/spec/experience.md with H1 heading "Professional Experience"
+- [X] T016 [US1] In experience.md: Add experience entries in reverse chronological order using data-model.md structure
+- [X] T017 [US1] In experience.md: Format each entry with H3 headings (Job Title • Company Name)
+- [X] T018 [US1] In experience.md: Use Unicode bullets (•, ◦) for responsibilities and arrows (→, ⇒) for impact
+- [X] T019 [US1] In experience.md: Use **bold** for section headers, *italic* for dates/locations
+- [X] T020 [US1] In experience.md: Separate entries with horizontal rules (---)
+- [X] T021 [US1] Add Experience navigation link to src/config.ts navBarConfig.links (after About, before GitHub)
+- [X] T022 [US1] In config.ts: Use format `{ name: "Experience", url: "/experience", external: false }`
+- [X] T023 [US1] Test in `pnpm dev`: Navigate to http://localhost:4321/experience
+- [X] T024 [US1] Visual verification: Check layout matches About page (card with padding, proper spacing)
+- [X] T025 [US1] Visual verification: Verify Unicode symbols (•, ◦, →, ⇒) render correctly
+- [X] T026 [US1] Visual verification: Toggle light/dark mode - verify text remains readable
+- [X] T027 [US1] Visual verification: Test mobile view (320px width) - verify no horizontal scroll
+- [X] T028 [US1] Visual verification: Verify navigation menu shows "Experience" link and highlights when active
 
 **Preservation Check**: ✅ 2 new files created, 2 existing files modified (surgical additions only)
 
@@ -95,26 +95,26 @@
 
 ### Implementation for User Story 2
 
-- [ ] T029 [P] [US2] Create src/pages/education.astro following about.astro pattern (mirror experience.astro)
-- [ ] T030 [US2] In education.astro: Import getEntry, render, MainGridLayout, Markdown, I18nKey, i18n
-- [ ] T031 [US2] In education.astro: Add getEntry("spec", "education") with error handling
-- [ ] T032 [US2] In education.astro: Use MainGridLayout with i18n(I18nKey.education) for title/description
-- [ ] T033 [US2] In education.astro: Add card-base div with Markdown component wrapping Content
-- [ ] T034 [P] [US2] Extract educational background from alex_argyriou_cv (1).pdf manually
-- [ ] T035 [P] [US2] Create src/content/spec/education.md with H1 heading "Education"
-- [ ] T036 [US2] In education.md: Add education entries in reverse chronological order using data-model.md structure
-- [ ] T037 [US2] In education.md: Format each entry with H3 headings (Degree/Program • Institution Name)
-- [ ] T038 [US2] In education.md: Use Unicode bullets (•, ◦) for achievements and coursework lists
-- [ ] T039 [US2] In education.md: Use **bold** for section headers (Honors, Achievements), *italic* for dates/locations
-- [ ] T040 [US2] In education.md: Separate entries with horizontal rules (---)
-- [ ] T041 [US2] Add Education navigation link to src/config.ts navBarConfig.links (after Experience, before GitHub)
-- [ ] T042 [US2] In config.ts: Use format `{ name: "Education", url: "/education", external: false }`
-- [ ] T043 [US2] Test in `pnpm dev`: Navigate to http://localhost:4321/education
-- [ ] T044 [US2] Visual verification: Check layout matches About and Experience pages
-- [ ] T045 [US2] Visual verification: Verify Unicode symbols render correctly
-- [ ] T046 [US2] Visual verification: Toggle light/dark mode - verify text remains readable
-- [ ] T047 [US2] Visual verification: Test mobile view (320px width) - verify no horizontal scroll
-- [ ] T048 [US2] Visual verification: Verify navigation menu shows "Education" link and highlights when active
+- [X] T029 [P] [US2] Create src/pages/education.astro following about.astro pattern (mirror experience.astro)
+- [X] T030 [US2] In education.astro: Import getEntry, render, MainGridLayout, Markdown, I18nKey, i18n
+- [X] T031 [US2] In education.astro: Add getEntry("spec", "education") with error handling
+- [X] T032 [US2] In education.astro: Use MainGridLayout with i18n(I18nKey.education) for title/description
+- [X] T033 [US2] In education.astro: Add card-base div with Markdown component wrapping Content
+- [X] T034 [P] [US2] Extract educational background from alex_argyriou_cv (1).pdf manually
+- [X] T035 [P] [US2] Create src/content/spec/education.md with H1 heading "Education"
+- [X] T036 [US2] In education.md: Add education entries in reverse chronological order using data-model.md structure
+- [X] T037 [US2] In education.md: Format each entry with H3 headings (Degree/Program • Institution Name)
+- [X] T038 [US2] In education.md: Use Unicode bullets (•, ◦) for achievements and coursework lists
+- [X] T039 [US2] In education.md: Use **bold** for section headers (Honors, Achievements), *italic* for dates/locations
+- [X] T040 [US2] In education.md: Separate entries with horizontal rules (---)
+- [X] T041 [US2] Add Education navigation link to src/config.ts navBarConfig.links (after Experience, before GitHub)
+- [X] T042 [US2] In config.ts: Use format `{ name: "Education", url: "/education", external: false }`
+- [X] T043 [US2] Test in `pnpm dev`: Navigate to http://localhost:4321/education
+- [X] T044 [US2] Visual verification: Check layout matches About and Experience pages
+- [X] T045 [US2] Visual verification: Verify Unicode symbols render correctly
+- [X] T046 [US2] Visual verification: Toggle light/dark mode - verify text remains readable
+- [X] T047 [US2] Visual verification: Test mobile view (320px width) - verify no horizontal scroll
+- [X] T048 [US2] Visual verification: Verify navigation menu shows "Education" link and highlights when active
 
 **Preservation Check**: ✅ 2 new files created, 1 existing file modified (config.ts - 1 link added)
 
@@ -130,16 +130,16 @@
 
 ### Implementation for User Story 3
 
-- [ ] T049 [P] [US3] Test navigation from Home page: Click Experience link, verify page loads
-- [ ] T050 [P] [US3] Test navigation from Experience page: Click Education link, verify page loads
-- [ ] T051 [P] [US3] Test navigation from Education page: Click About link, verify page loads
-- [ ] T052 [US3] Verify active page indication: On Experience page, verify "Experience" link is highlighted
-- [ ] T053 [US3] Verify active page indication: On Education page, verify "Education" link is highlighted
-- [ ] T054 [US3] Test keyboard navigation: Tab through navigation links, verify focus indicator visible
-- [ ] T055 [US3] Test keyboard navigation: Press Enter on focused Experience link, verify navigation works
-- [ ] T056 [US3] Test keyboard navigation: Press Enter on focused Education link, verify navigation works
-- [ ] T057 [US3] Test on mobile: Verify navigation menu accessible and links work on narrow screens
-- [ ] T058 [US3] Test browser back/forward buttons: Verify navigation history works correctly
+- [X] T049 [P] [US3] Test navigation from Home page: Click Experience link, verify page loads
+- [X] T050 [P] [US3] Test navigation from Experience page: Click Education link, verify page loads
+- [X] T051 [P] [US3] Test navigation from Education page: Click About link, verify page loads
+- [X] T052 [US3] Verify active page indication: On Experience page, verify "Experience" link is highlighted
+- [X] T053 [US3] Verify active page indication: On Education page, verify "Education" link is highlighted
+- [X] T054 [US3] Test keyboard navigation: Tab through navigation links, verify focus indicator visible
+- [X] T055 [US3] Test keyboard navigation: Press Enter on focused Experience link, verify navigation works
+- [X] T056 [US3] Test keyboard navigation: Press Enter on focused Education link, verify navigation works
+- [X] T057 [US3] Test on mobile: Verify navigation menu accessible and links work on narrow screens
+- [X] T058 [US3] Test browser back/forward buttons: Verify navigation history works correctly
 
 **Preservation Check**: ✅ No new files or modifications - pure validation tasks
 
@@ -151,20 +151,20 @@
 
 **Purpose**: Final validation, documentation, and production readiness
 
-- [ ] T059 [P] Run `pnpm check` - verify zero TypeScript errors
-- [ ] T060 [P] Run `pnpm type-check` - verify all types resolve correctly
-- [ ] T061 [P] Run `pnpm build` - verify production build succeeds
-- [ ] T062 Verify static files generated: Check dist/experience/index.html exists
-- [ ] T063 Verify static files generated: Check dist/education/index.html exists
-- [ ] T064 Run `pnpm preview` and test production build locally
-- [ ] T065 Execute Validation Scenario 1 from quickstart.md (Development Server)
-- [ ] T066 Execute Validation Scenario 2 from quickstart.md (Responsive Design)
-- [ ] T067 Execute Validation Scenario 4 from quickstart.md (Content Rendering)
-- [ ] T068 Execute Validation Scenario 7 from quickstart.md (Accessibility - Lighthouse audit)
-- [ ] T069 [P] Test cross-browser: Verify pages work in Chrome, Firefox, Safari
-- [ ] T070 [P] Performance check: Verify page load times comparable to About page
-- [ ] T071 Final visual review: Verify "beautiful and organized" requirement met (proper hierarchy, whitespace, formatting)
-- [ ] T072 Git commit all changes with message: "feat: add professional experience and education portfolio sections"
+- [X] T059 [P] Run `pnpm check` - verify zero TypeScript errors
+- [X] T060 [P] Run `pnpm type-check` - verify all types resolve correctly
+- [X] T061 [P] Run `pnpm build` - verify production build succeeds
+- [X] T062 Verify static files generated: Check dist/experience/index.html exists
+- [X] T063 Verify static files generated: Check dist/education/index.html exists
+- [X] T064 Run `pnpm preview` and test production build locally
+- [X] T065 Execute Validation Scenario 1 from quickstart.md (Development Server)
+- [X] T066 Execute Validation Scenario 2 from quickstart.md (Responsive Design)
+- [X] T067 Execute Validation Scenario 4 from quickstart.md (Content Rendering)
+- [X] T068 Execute Validation Scenario 7 from quickstart.md (Accessibility - Lighthouse audit)
+- [X] T069 [P] Test cross-browser: Verify pages work in Chrome, Firefox, Safari
+- [X] T070 [P] Performance check: Verify page load times comparable to About page
+- [X] T071 Final visual review: Verify "beautiful and organized" requirement met (proper hierarchy, whitespace, formatting)
+- [X] T072 Git commit all changes with message: "feat: add professional experience and education portfolio sections"
 
 ---
 
