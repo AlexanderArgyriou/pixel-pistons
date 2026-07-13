@@ -2,7 +2,7 @@
 
 ---
 
-## ![Vodafone](/logos/companies/vodafone.png) Staff Software Engineer • Vodafone
+## Staff Software Engineer • Vodafone
 
 *Athens, Greece* | *January 2026 – Present*
 
@@ -27,7 +27,7 @@
 
 ---
 
-## ![Vodafone](/logos/companies/vodafone.png) Senior Software Engineer • Vodafone
+## Senior Software Engineer • Vodafone
 
 *Athens, Greece* | *December 2023 – January 2026*
 
@@ -53,7 +53,7 @@
 
 ---
 
-## ![Vodafone](/logos/companies/vodafone.png) Software Engineer • Vodafone
+## Software Engineer • Vodafone
 
 *Athens, Greece* | *July 2022 – December 2023*
 
@@ -77,7 +77,7 @@
 
 ---
 
-## ![P&I AG](/logos/companies/pni-ag.png) Software Engineer • P&I AG
+## Software Engineer • P&I AG
 
 *Ioannina, Greece / Wiesbaden, Germany* | *December 2020 – July 2022*
 
@@ -103,7 +103,7 @@
 
 ---
 
-## ![Hellenic Army](/logos/companies/hellenic-army.png) Software Engineer • Hellenic Army
+## Software Engineer • Hellenic Army
 
 *Evros, Greece* | *October 2019 – July 2020*
 
@@ -124,7 +124,7 @@
 
 ---
 
-## ![Dixons Carphone](/logos/companies/dixons-carphone.png) Electronic Engineer Intern • Dixons Carphone
+## Electronic Engineer Intern • Dixons Carphone
 
 *Ioannina, Greece* | *November 2017 – April 2018*
 

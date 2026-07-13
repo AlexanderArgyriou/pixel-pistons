@@ -2,7 +2,7 @@
 
 ---
 
-## ![Neapolis University](/logos/universities/neapolis.png) Master of Science in Enterprise Information Systems
+## Master of Science in Enterprise Information Systems
 
 **Neapolis University** | *Pafos, Cyprus* | *2021 – 2022*
 
@@ -18,7 +18,7 @@
 
 ---
 
-## ![TEI Western Macedonia](/logos/universities/tei-western-macedonia.png) Bachelor of Engineering in Computer Science & Engineering
+## Bachelor of Engineering in Computer Science & Engineering
 
 **Technological Educational Institute of Western Macedonia** | *Kastoria, Greece* | *2014 – 2020*
 
