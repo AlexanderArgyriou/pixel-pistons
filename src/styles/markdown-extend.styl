@@ -74,6 +74,19 @@
   img
     border-radius: 0.75rem
 
+  // Company and university logos in headings
+  h2 img[src*="/logos/"],
+  h3 img[src*="/logos/"]
+    display: inline-block
+    height: 1.5em
+    width: 1.5em
+    margin-right: 0.5em
+    margin-bottom: -0.2em
+    border-radius: 0.25rem
+    object-fit: contain
+    background: white
+    padding: 0.1em
+
   hr
     border-color: var(--line-divider)
     border-style: dashed
