@@ -47,12 +47,12 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.About,
 		{
 			name: "Experience",
-			url: "/experience",
+			url: "/experience/",
 			external: false,
 		},
 		{
 			name: "Education",
-			url: "/education",
+			url: "/education/",
 			external: false,
 		},
 		{
