@@ -13,13 +13,77 @@ if (!experiencePost) {
 }
 
 const { Content } = await render(experiencePost);
+
+// SEO-optimized metadata
+const pageTitle = "Professional Experience - Software Engineer Portfolio | Alex Argyriou";
+const pageDescription = "Explore Alex Argyriou's professional software engineering experience: Staff Engineer at Vodafone (2022-Present), expertise in Java, Spring Boot, Quarkus, AWS, Kubernetes, microservices architecture, and CI/CD. 6+ years building enterprise systems.";
+const keywords = "software engineer, Java developer, Spring Boot, Quarkus, AWS, Kubernetes, microservices, DevOps, CI/CD, enterprise architecture, Vodafone, P&I AG, backend engineer, cloud native, Athens Greece";
+
+// JSON-LD Structured Data for Person with work experience
+const structuredData = {
+	"@context": "https://schema.org",
+	"@type": "Person",
+	"name": "Alexandros Argyriou",
+	"jobTitle": "Staff Software Engineer",
+	"url": Astro.site + "experience/",
+	"sameAs": [
+		"https://www.linkedin.com/in/alexander-argyriou/",
+		"https://github.com/AlexanderArgyriou"
+	],
+	"alumniOf": [
+		{
+			"@type": "EducationalOrganization",
+			"name": "Neapolis University",
+			"location": "Pafos, Cyprus"
+		},
+		{
+			"@type": "EducationalOrganization",
+			"name": "Technological Educational Institute of Western Macedonia",
+			"location": "Kastoria, Greece"
+		}
+	],
+	"worksFor": [
+		{
+			"@type": "Organization",
+			"name": "Vodafone",
+			"location": "Athens, Greece"
+		}
+	],
+	"knowsAbout": [
+		"Software Engineering",
+		"Java",
+		"Spring Boot",
+		"Quarkus",
+		"Microservices Architecture",
+		"Cloud Computing",
+		"AWS",
+		"Kubernetes",
+		"DevOps",
+		"CI/CD"
+	]
+};
 ---
-<MainGridLayout title={i18n(I18nKey.experience)} description={i18n(I18nKey.experience)}>
-    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
+<MainGridLayout title={pageTitle} description={pageDescription}>
+	<Fragment slot="head">
+		<!-- SEO Meta Tags -->
+		<meta name="keywords" content={keywords} />
+		<link rel="canonical" href={Astro.site + "experience/"} />
+		
+		<!-- Open Graph Enhanced -->
+		<meta property="og:type" content="profile" />
+		<meta property="profile:first_name" content="Alexandros" />
+		<meta property="profile:last_name" content="Argyriou" />
+		<meta property="profile:username" content="AlexanderArgyriou" />
+		
+		<!-- JSON-LD Structured Data -->
+		<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+	</Fragment>
+
+    <article class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
         <div class="card-base z-10 px-9 py-6 relative w-full ">
             <Markdown class="mt-2">
                 <Content />
             </Markdown>
         </div>
-    </div>
+    </article>
 </MainGridLayout>
