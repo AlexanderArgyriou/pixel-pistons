@@ -2,47 +2,60 @@
 
 ---
 
-### Master of Science in Computer Science • National Technical University of Athens
+### Master of Science in Enterprise Information Systems • Neapolis University
 
-*Software Engineering & Distributed Systems* | *Athens, Greece* | *September 2017 – June 2019*
+*Pafos, Cyprus* | *2021 – 2022*
 
-**Honors:** GPA 3.9/4.0 • Graduated with Distinction
+**Master's Thesis:** Analysis, design and implementation of an enterprise investment decision support system in the cryptocurrency market, based on time-series forecasting and auto-ARIMA models (Spring Boot/React)
 
-**Achievements:**
-• Master's Thesis: "Scalable Microservices Architecture Patterns" (Grade: A+)
-• Published 2 papers in IEEE conferences on distributed systems
-• Teaching Assistant for "Advanced Software Engineering" course
-• Recipient of Academic Excellence Scholarship (2018-2019)
-
-**Relevant Coursework:** Distributed Systems, Cloud Computing, Software Architecture, Advanced Algorithms, Machine Learning, Data Mining
-
----
-
-### Bachelor of Engineering in Computer Science • National Technical University of Athens
-
-*Athens, Greece* | *September 2013 – June 2017*
-
-**Honors:** GPA 3.7/4.0 • Dean's List (2015, 2016)
-
-**Achievements:**
-• Capstone Project: "Real-time Traffic Management System" (Grade: A)
-• Member of ACM Student Chapter
-• Participated in European Programming Competition (Top 50)
-• Volunteer tutor for first-year students
-
-**Relevant Coursework:** Data Structures & Algorithms, Operating Systems, Computer Networks, Database Systems, Software Engineering, Artificial Intelligence
+**Focus Areas:**
+• Enterprise Systems Architecture
+• Information Systems Management
+• Time-Series Forecasting & Predictive Analytics
+• Cryptocurrency Market Analysis
+• Full-Stack Development (Spring Boot, React)
 
 ---
 
-### High School Diploma • Athens High School
+### Bachelor of Engineering in Computer Science & Engineering • Technological Educational Institute of Western Macedonia
 
-*Athens, Greece* | *2013*
+*Kastoria, Greece* | *2014 – 2020*
 
-**Honors:** Valedictorian • National Examinations Score: 19.5/20
+**Bachelor's Thesis:** Hybrid binary voxel map compression based on volume subdivision and run length encoding, without power of 2 limitations. A C++ approach.
 
-**Achievements:**
-• First place in National Mathematics Competition
-• Member of School Robotics Team (Regional Champions)
-• Student Council President (2012-2013)
+**Focus Areas:**
+• Software Engineering Fundamentals
+• Data Structures & Algorithms
+• Computer Graphics & 3D Rendering
+• Compression Algorithms
+• C++ Systems Programming
+
+---
+
+## Certifications
+
+### Java & Spring Academy (120 hours)
+
+*Athens Tech College*
+
+Comprehensive training in Java ecosystem and Spring Framework, covering:
+• Core Java Programming
+• Spring Framework Architecture
+• Spring Boot Development
+• RESTful API Design
+• Microservices Patterns
+
+---
+
+### Developing on AWS
+
+*Amazon Web Services*
+
+Professional certification demonstrating expertise in:
+• AWS Core Services (EC2, S3, RDS, Lambda)
+• Cloud Architecture Best Practices
+• Serverless Application Development
+• Infrastructure as Code
+• DevOps on AWS
 
 ---

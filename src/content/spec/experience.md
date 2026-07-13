@@ -2,61 +2,128 @@
 
 ---
 
-### Senior Software Engineer • TechCorp International
+### Staff Software Engineer • Vodafone
 
-*Remote* | *March 2021 – Present*
+*Athens, Greece* | *January 2026 – Present*
 
 **Key Responsibilities:**
-• Architected and implemented distributed microservices platform serving 10M+ daily users
-• Led cross-functional team of 8 engineers across 3 time zones
-  ◦ Established CI/CD pipelines reducing deployment time by 75%
-  ◦ Implemented monitoring and observability stack (Prometheus, Grafana)
-• Designed event-driven architecture for real-time data processing
-• Mentored 4 junior engineers, conducting code reviews and technical design sessions
+• Actively maintaining & developing 3 core platforms:
+  ◦ **DXL (Digital Xperience Layer)**: Quarkus middleware with 200+ microservices
+  ◦ **Ecommerce Platform**: In-house Spring Boot platform with 30+ microservices built from scratch
+  ◦ **Retail 10**: Monolith "under deconstruction and modernization" - agent-based platform for physical shops
+• Providing technical supervision and architectural leadership across three Agile teams (4–7 members each)
+• Researching & investigating meaningful AI integrations, exploring LLM MCP functionalities
+• Providing continuous knowledge transfer through biweekly trainings, presentations, and colleague mentoring
+• Changed entire development flow from git-flow to Scaled Trunk Based Development [STBD], embracing true CI/CD
 
-**Technologies:** Java 17, Spring Boot, Kubernetes, Kafka, PostgreSQL, Redis, AWS
+**Technologies:** Microservices, GitHub Actions, Jenkins, Spring Boot, Quarkus, Docker, Solr, AWS, Kubernetes, Kafka, PostgreSQL, Swagger, OpenSearch, ArgoCD
 
 **Impact:**
-→ Reduced API latency from 500ms to 50ms (90th percentile)
-→ Improved system reliability from 99.5% to 99.95% uptime
-→ Decreased infrastructure costs by 40% through optimization
+→ Led architectural modernization of legacy systems across enterprise
+→ Established knowledge-sharing culture through structured training programs
+→ Transformed deployment pipeline to modern CI/CD practices
 
 ---
 
-### Software Engineer • Digital Solutions Ltd
+### Senior Software Engineer • Vodafone
 
-*Athens, Greece* | *June 2018 – February 2021*
+*Athens, Greece* | *December 2023 – January 2026*
 
 **Key Responsibilities:**
-• Developed and maintained enterprise Java applications for financial services sector
-• Collaborated with product managers and UX designers on feature development
-• Implemented RESTful APIs and microservices architecture
-• Participated in agile ceremonies and sprint planning
+• Built from scratch & maintained the new e-commerce platform for Vodafone Greece
+• Led the back-end chapter with full responsibility for development and implementation (during chapter lead absence)
+• Presented reactive programming approach using Spring & WebFlux at Devstaff 2023 meeting
+• Championed Quarkus adoption as middleware technology, explaining advantages of compile-time augmentation vs runtime loading for cloud environments
+• Demonstrated and implemented fully automated CI/CD with GitHub Actions POC
+• Migrated significant portion of legacy Jenkins stack to GitHub's integrated CI/CD platform
+• Implemented local AWS development environment using LocalStack mock and K8s cluster
+• Created aspect-oriented solution leveraging reflection to demonstrate internal Spring Boot aspects
+• Interviewed and trained junior/mid developers
 
-**Technologies:** Java 11, Spring Framework, MySQL, Docker, Jenkins
+**Technologies:** Spring Boot, Spring WebFlux, Quarkus, AWS, Kubernetes, GitHub Actions, Jenkins, LocalStack
 
 **Impact:**
-→ Delivered 15+ features on time with 98% bug-free rate
-→ Reduced code review time by 30% through automated testing
-→ Improved application performance by 25%
+→ Successfully launched new e-commerce platform from zero to production
+→ Reduced CI/CD complexity through platform migration and automation
+→ Improved local development experience with AWS mock environment
 
 ---
 
-### Junior Software Developer • StartupTech
+### Software Engineer • Vodafone
 
-*Athens, Greece* | *September 2016 – May 2018*
+*Athens, Greece* | *July 2022 – December 2023*
 
 **Key Responsibilities:**
-• Built web applications using modern JavaScript frameworks
-• Worked on both frontend and backend development
-• Fixed bugs and implemented enhancements based on user feedback
-• Collaborated with senior developers on architecture decisions
+• Participated in backend chapter decommissioning the old ecommerce platform
+• Implemented various components of new e-commerce cloud infrastructure, emphasizing DevOps skills on AWS/EKS cluster
+• Created POC for OpenTelemetry usage in microservices tracing using Splunk OTel/agent for log/tracing integration
+• Developed SQL triggers to automate database processes upon CRUD operations (e.g., virtual table/view generation)
+• Integrated Solr with AWS OpenSearch to provide indexing and searching on general cluster (document DB) for multiple organization clients
+• Presented demonstration on building annotation-based web framework using plain Java ("Virtual Octopus Server")
+• Designed and documented exposed APIs using Swagger (OpenAPI)
 
-**Technologies:** JavaScript, React, Node.js, MongoDB, Git
+**Technologies:** Spring Boot, AWS EKS, Solr, OpenSearch, OpenTelemetry, Splunk, PostgreSQL, Swagger, Docker, Kubernetes
 
 **Impact:**
-→ Contributed to 3 major product releases
-→ Reduced page load times by 40% through optimization
-→ Implemented user authentication system serving 50K+ users
+→ Enhanced observability through OpenTelemetry integration
+→ Improved search capabilities via Solr-OpenSearch integration
+→ Streamlined API documentation and development workflows
+
+---
+
+### Software Engineer • P&I AG
+
+*Ioannina, Greece / Wiesbaden, Germany* | *December 2020 – July 2022*
+
+**Key Responsibilities:**
+• Part of payroll engine team developing and maintaining multi-million revenue product
+• Multi-role player in payroll's abstractions team
+• Developed various containerized APIs to expose engine functionality to clients/projects (Spring Boot, Spring REST, Spring HATEOAS, Docker)
+• Fully developed 2 sub-projects independently to improve team workflow:
+  ◦ **IntelliJ plugin** (Java & Gradle): Safety mechanism for committing on older CVS branches with outdated binary files
+  ◦ **.xls searcher** (Java & Apache POI): Simplified business rules search through Excel files
+• Led implementation and major refactors of collective agreements according to law amendments, applying proper OOP design patterns
+• Parametrized and utilized Jenkins for continuous integration automation
+• Maintained code across multiple version control systems (Git, SVN, CVS) on both Windows & Linux environments
+
+**Technologies:** Java EE, Spring Boot, Maven, Drools, Wildfly, Jenkins, Git, SVN, CVS, Oracle DB, PostgreSQL, Docker
+
+**Impact:**
+→ Improved developer productivity through custom tooling (IntelliJ plugin, Excel searcher)
+→ Maintained code quality during legal compliance updates
+→ Automated deployment processes reducing manual effort
+
+---
+
+### Software Engineer • Hellenic Army
+
+*Evros, Greece* | *October 2019 – July 2020*
+
+**Key Responsibilities:**
+• Provided assistance in software optimization and maintenance of army's drone micro-controllers (C/C++)
+• Developed fully functional Qt/C++ desktop application for military-files handling, reducing search complexity in raw documents
+• Optimized scripts to automate transformation of income messages in private network into .xls data
+• Completed communication systems operator training
+• Honored by army general with "excellent service" award
+
+**Technologies:** C/C++, Qt, Network Systems, Shell Scripting
+
+**Achievements:**
+→ Received "excellent service" award from army general
+→ Delivered critical file management system under tight security requirements
+
+---
+
+### Electronic Engineer Intern • Dixons Carphone
+
+*Ioannina, Greece* | *November 2017 – April 2018*
+
+**Key Responsibilities:**
+• Detected and solved various problems on electronic devices, focusing on hardware domain
+• Specialized in chipset, motherboard, and graphics card restoration
+• Tracked and saved data relevant to restored products on Unix CLI-based application
+• Performed administration role on Unix CLI-based supply information system
+
+**Technologies:** Hardware Diagnostics, Unix CLI Systems
 
 ---
