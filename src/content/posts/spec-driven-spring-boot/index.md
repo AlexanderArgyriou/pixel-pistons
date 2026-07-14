@@ -1,18 +1,18 @@
 ---
-title: Spec Driven Development
+title: SDD with Spring boot
 published: 2026-07-06
 description: 'Spec Driven Development with spring boot'
-image: './spec.png'
+image: './spec-spring.jpeg'
 tags: [spring-boot, spec-driven, ai]
 category: 'spring-boot'
-draft: true 
+draft: false 
 lang: 'en'
 commentsEnabled: true
 ---
 
-# Spring Boot + Spec-Driven Development
+# Spring Boot + Spec Driven Development
 
-> Moving from **code-first** development to **specification-first** development with Spring Boot and AI.
+> Moving from **code first** development to **specification first** development with Spring Boot and AI.
 
 ---
 
@@ -31,10 +31,8 @@ Requirements
 ```
 
 Unfortunately, the requirements were often forgotten after implementation.
-
 The source of truth eventually became the **code**, not the business requirements.
-
-With modern AI assistants (Claude, GPT-5.x, GitHub Copilot, Gemini, Cursor, etc.), the workflow can fundamentally change.
+With modern AI assistants (Claude, GPT-5.x, Copilot etc.), the workflow can fundamentally change.
 
 Instead of asking:
 
@@ -44,63 +42,44 @@ we ask
 
 > "How do I specify exactly what the software should do?"
 
-This is the main idea behind **Spec-Driven Development (SDD)** discussed by Simon Martinelli in the Spring Office Hours podcast.
+This is the main idea behind **Spec Driven Development (SDD)** discussed by Simon Martinelli in the Spring Office Hours podcast. [podcast](https://spring.io/blog/2026/05/04/spring-office-hours-podcast-S5E14)
 
 The specification becomes the single source of truth.
-
 Code becomes an implementation artifact that can be generated, verified, regenerated, and tested.
 
 ---
 
-# Why Spec-Driven Development?
+# Why Spec Driven Development?
 
 Traditional development usually evolves like this:
 
 ```
 Business Requirement
-
 ↓
-
 Developer interpretation
-
 ↓
-
 Implementation
-
 ↓
-
 Tests
-
 ↓
-
 Documentation
 ```
 
 Notice that the original requirement is lost.
 
-In Spec-Driven Development:
+In Spec Driven Development:
 
 ```
 Business Requirement
-
 ↓
-
 Specification
-
 ↓
-
 AI / Developer
-
 ↓
-
 Generated Code
-
 ↓
-
 Generated Tests
-
 ↓
-
 Verification
 ```
 
@@ -120,9 +99,7 @@ we describe
 
 ```
 The system shall allow a user to register.
-
 Email must be unique.
-
 Password must contain:
 
 - uppercase
@@ -251,25 +228,15 @@ An AI assistant can generate
 
 ```
 Controller
-
 ↓
-
 DTO
-
 ↓
-
 Validation
-
 ↓
-
 Service
-
 ↓
-
 Repository
-
 ↓
-
 Tests
 ```
 
@@ -362,36 +329,27 @@ public class UserService {
 }
 ```
 
-Again...
-
+Again,
 Business rules came from the specification.
 
 ---
 
 # OpenAPI First
 
-Spec-Driven Development fits naturally with OpenAPI.
+Spec Driven Development fits naturally with OpenAPI.
 
 Example
 
 ```yaml
 paths:
-
   /users:
-
     post:
-
       summary: Register user
-
       requestBody:
-
         required: true
-
       responses:
-
         "201":
           description: User created
-
         "409":
           description: Duplicate email
 ```
@@ -464,38 +422,23 @@ Only implement what is specified.
 
 ```
 Business
-
 ↓
-
 Specification
-
 ↓
-
 Git
-
 ↓
-
 AI
-
 ↓
-
 Generated Code
-
 ↓
-
 Developer Review
-
 ↓
-
 Tests
-
 ↓
-
 Production
 ```
 
 Notice that AI is not replacing developers.
-
 It is replacing repetitive implementation work.
 
 ---
@@ -506,19 +449,12 @@ A practical repository might look like this
 
 ```
 order-service/
-
     specs/
-
         create-order.md
-
         cancel-order.md
-
         payment.md
-
     src/
-
     prompts/
-
     docs/
 ```
 
@@ -542,7 +478,7 @@ Password minimum length
 10
 ```
 
-Later...
+Later..
 
 ```
 Password minimum length
@@ -562,7 +498,7 @@ without developers hunting through dozens of files.
 
 # What Should Developers Still Do?
 
-Spec-Driven Development does **not** eliminate engineering.
+Spec Driven Development does **not** eliminate engineering.
 
 Developers still make architectural decisions:
 
@@ -576,7 +512,6 @@ Developers still make architectural decisions:
 - Database design
 
 AI accelerates implementation.
-
 Engineers remain responsible for correctness.
 
 ---
@@ -670,29 +605,17 @@ These are ideal candidates for AI generation.
 
 ```
 1. Write specification
-
 ↓
-
 2. Review with stakeholders
-
 ↓
-
 3. Commit specification
-
 ↓
-
 4. Generate implementation
-
 ↓
-
 5. Review generated code
-
 ↓
-
 6. Execute tests
-
 ↓
-
 7. Deploy
 ```
 
@@ -700,14 +623,14 @@ These are ideal candidates for AI generation.
 
 # Conclusion
 
-Spec-Driven Development shifts the primary artifact of software engineering from **code** to **specifications**.
+Spec Driven Development shifts the primary artifact of software engineering from **code** to **specifications**.
 
 For Spring Boot teams, this approach works particularly well because:
 
 - Spring's conventions make generated code predictable.
 - Validation rules map naturally from specifications.
 - OpenAPI integrates seamlessly with REST APIs.
-- AI assistants excel at generating controllers, DTOs, services, and tests from well-defined requirements.
+- AI assistants excel at generating controllers, DTOs, services, and tests from well defined requirements.
 
 The key insight is simple:
 
@@ -719,7 +642,7 @@ When specifications become the single source of truth, Spring Boot becomes the e
 
 # Further Reading
 
-- Spring Office Hours Podcast S5E14: Spec-Driven Development with Simon Martinelli
+- Spring Office Hours Podcast S5E14: Spec Driven Development with Simon Martinelli
 - Spring Boot Reference Documentation
 - OpenAPI Specification
 - Spring REST Docs

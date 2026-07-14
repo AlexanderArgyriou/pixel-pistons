@@ -5,7 +5,7 @@ description: "Test post for Giscus comments integration"
 category: "Test"
 tags: ["Giscus", "Comments", "Test"]
 commentsEnabled: true
-draft: false
+draft: true
 ---
 
 # Test Giscus Comments
