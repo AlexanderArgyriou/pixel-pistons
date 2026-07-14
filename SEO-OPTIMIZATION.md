@@ -49,7 +49,7 @@ Added comprehensive keyword lists targeting:
   "@type": "Person",
   "name": "Alexandros Argyriou",
   "jobTitle": "Staff Software Engineer",
-  "url": "https://pixel-pistons.vercel.app/experience/",
+  "url": "https://pixel-pistons.com/experience/",
   "sameAs": [
     "https://www.linkedin.com/in/alexander-argyriou/",
     "https://github.com/AlexanderArgyriou"
@@ -94,7 +94,7 @@ Enhanced social media sharing with:
 
 #### Canonical URLs
 ```html
-<link rel="canonical" href="https://pixel-pistons.vercel.app/experience/" />
+<link rel="canonical" href="https://pixel-pistons.com/experience/" />
 ```
 
 **Benefits:**
@@ -117,7 +117,7 @@ Changed wrapper `<div>` to `<article>` element.
 ### Sitemap
 - ✅ Automatic XML sitemap generation via `@astrojs/sitemap`
 - ✅ Submitted to search engines via robots.txt
-- Location: `https://pixel-pistons.vercel.app/sitemap-index.xml`
+- Location: `https://pixel-pistons.com/sitemap-index.xml`
 
 ### Robots.txt
 - ✅ Proper crawling directives
@@ -206,7 +206,7 @@ Changed wrapper `<div>` to `<article>` element.
     "@type": "ListItem",
     "position": 1,
     "name": "Home",
-    "item": "https://pixel-pistons.vercel.app/"
+    "item": "https://pixel-pistons.com/"
   },{
     "@type": "ListItem",
     "position": 2,
