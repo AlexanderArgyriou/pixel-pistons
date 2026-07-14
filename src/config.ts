@@ -9,8 +9,8 @@ import { LinkPreset } from "./types/config";
 import type { GiscusConfig } from "./types/giscus";
 
 export const siteConfig: SiteConfig = {
-	title: "Pixel Piston",
-	subtitle: "blog",
+	title: "Pixel Pistons",
+	subtitle: "Alex Argyriou",
 	lang: "en", // Language code, e.g. 'en', 'zh_CN', 'ja', etc.
 	themeColor: {
 		hue: 245, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
@@ -64,7 +64,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/prof3.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	avatar: "assets/images/vegeta.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "Alex Argyriou",
 	bio: "Software Engineer BEng, MSc",
 	links: [
