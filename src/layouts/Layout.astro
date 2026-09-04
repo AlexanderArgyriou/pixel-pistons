@@ -2,9 +2,9 @@
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import Analytics from '@vercel/analytics/astro'
 
 import ConfigCarrier from "@components/ConfigCarrier.astro";
+import Analytics from "@vercel/analytics/astro";
 import { profileConfig, siteConfig } from "@/config";
 import {
 	AUTO_MODE,
@@ -18,6 +18,7 @@ import {
 } from "../constants/constants";
 import { defaultFavicons } from "../constants/icon";
 import type { Favicon } from "../types/config";
+import { resolveOgImage } from "../utils/og-image-utils";
 import { pathsEqual, url } from "../utils/url-utils";
 import "katex/dist/katex.css";
 
@@ -27,9 +28,19 @@ interface Props {
 	description?: string;
 	lang?: string;
 	setOGTypeArticle?: boolean;
+	ogImage?: string;
+	ogImageBasePath?: string;
 }
 
-let { title, banner, description, lang, setOGTypeArticle } = Astro.props;
+let {
+	title,
+	banner,
+	description,
+	lang,
+	setOGTypeArticle,
+	ogImage,
+	ogImageBasePath = "/",
+} = Astro.props;
 
 // apply a class to the body element to decide the height of the banner, only used for initial page load
 // Swup can update the body for each page visit, but it's after the page transition, causing a delay for banner height change
@@ -71,6 +82,13 @@ const bannerOffsetByPosition = {
 };
 const bannerOffset =
 	bannerOffsetByPosition[siteConfig.banner.position || "center"];
+
+const ogImageResolved = await resolveOgImage(
+	ogImage,
+	ogImageBasePath,
+	Astro.site,
+);
+const ogImageAlt = title || siteConfig.title;
 ---
 
 <!DOCTYPE html>
@@ -100,6 +118,24 @@ const bannerOffset =
 		<meta property="twitter:url" content={Astro.url}>
 		<meta name="twitter:title" content={pageTitle}>
 		<meta name="twitter:description" content={description || pageTitle}>
+
+		{ogImageResolved && (
+		<>
+			<meta property="og:image" content={ogImageResolved.url}>
+			{ogImageResolved.url.startsWith("https:") && (
+			<meta property="og:image:secure_url" content={ogImageResolved.url}>
+			)}
+			{ogImageResolved.width && ogImageResolved.height && (
+			<>
+				<meta property="og:image:width" content={String(ogImageResolved.width)}>
+				<meta property="og:image:height" content={String(ogImageResolved.height)}>
+			</>
+			)}
+			<meta property="og:image:alt" content={ogImageAlt}>
+			<meta name="twitter:image" content={ogImageResolved.url}>
+			<meta name="twitter:image:alt" content={ogImageAlt}>
+		</>
+		)}
 
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
