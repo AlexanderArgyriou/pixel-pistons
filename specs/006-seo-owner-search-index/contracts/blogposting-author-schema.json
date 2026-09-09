@@ -1,0 +1,36 @@
+{
+    "$comment": "Contract for the per-post BlogPosting JSON-LD emitted in src/pages/posts/[...slug].astro. The author object MUST reference the same owner identity used sitewide.",
+    "example": {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Example Post Title",
+        "description": "Example description",
+        "keywords": [
+            "example",
+            "tags"
+        ],
+        "author": {
+            "@type": "Person",
+            "name": "Alex Argyriou",
+            "alternateName": [
+                "Alexandros Argyriou",
+                "Alexander Argyriou"
+            ],
+            "sameAs": [
+                "https://www.linkedin.com/in/alexander-argyriou/",
+                "https://github.com/AlexanderArgyriou"
+            ],
+            "url": "https://pixel-pistons.com/"
+        },
+        "datePublished": "2026-09-09"
+    },
+    "requiredFields": [
+        "author.name",
+        "author.alternateName",
+        "author.sameAs"
+    ],
+    "invariants": [
+        "author.name MUST be identical across every post (no spelling/casing drift)",
+        "Only published (non-draft) posts are ever rendered, so every emitted BlogPosting corresponds to an indexable URL"
+    ]
+}

@@ -2,6 +2,7 @@
 
 import { getEntry, render } from "astro:content";
 import Markdown from "@components/misc/Markdown.astro";
+import { ownerIdentity } from "../constants/seo";
 import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
 import MainGridLayout from "../layouts/MainGridLayout.astro";
@@ -15,102 +16,102 @@ if (!educationPost) {
 const { Content } = await render(educationPost);
 
 // SEO-optimized metadata
-const pageTitle = "Education & Certifications - Computer Science Degrees | Alex Argyriou";
-const pageDescription = "Alex Argyriou's academic credentials: MSc Enterprise Information Systems (Neapolis University), BEng Computer Science & Engineering (TEI Western Macedonia), AWS Certified, Java & Spring Academy graduate. Specialized in software architecture and systems design.";
-const keywords = "computer science degree, MSc Enterprise Information Systems, BEng Computer Science, software engineering education, Neapolis University Cyprus, TEI Western Macedonia, AWS certification, Java Spring certification, enterprise systems, academic qualifications";
+const pageTitle =
+	"Education & Certifications - Computer Science Degrees | Alex Argyriou";
+const pageDescription =
+	"Alex Argyriou's academic credentials: MSc Enterprise Information Systems (Neapolis University), BEng Computer Science & Engineering (TEI Western Macedonia), AWS Certified, Java & Spring Academy graduate. Specialized in software architecture and systems design.";
+const keywords =
+	"computer science degree, MSc Enterprise Information Systems, BEng Computer Science, software engineering education, Neapolis University Cyprus, TEI Western Macedonia, AWS certification, Java Spring certification, enterprise systems, academic qualifications";
 
 // JSON-LD Structured Data for Educational credentials
 const structuredData = {
 	"@context": "https://schema.org",
 	"@type": "Person",
-	"name": "Alexandros Argyriou",
-	"url": Astro.site + "education/",
-	"sameAs": [
-		"https://www.linkedin.com/in/alexander-argyriou/",
-		"https://github.com/AlexanderArgyriou"
-	],
-	"alumniOf": [
+	name: ownerIdentity.name,
+	alternateName: ownerIdentity.alternateName,
+	url: `${Astro.site}education/`,
+	sameAs: ownerIdentity.sameAs,
+	alumniOf: [
 		{
 			"@type": "EducationalOrganization",
-			"name": "Neapolis University",
-			"location": {
+			name: "Neapolis University",
+			location: {
 				"@type": "Place",
-				"address": {
+				address: {
 					"@type": "PostalAddress",
-					"addressLocality": "Pafos",
-					"addressCountry": "Cyprus"
-				}
-			}
+					addressLocality: "Pafos",
+					addressCountry: "Cyprus",
+				},
+			},
 		},
 		{
 			"@type": "EducationalOrganization",
-			"name": "Technological Educational Institute of Western Macedonia",
-			"location": {
+			name: "Technological Educational Institute of Western Macedonia",
+			location: {
 				"@type": "Place",
-				"address": {
+				address: {
 					"@type": "PostalAddress",
-					"addressLocality": "Kastoria",
-					"addressCountry": "Greece"
-				}
-			}
-		}
+					addressLocality: "Kastoria",
+					addressCountry: "Greece",
+				},
+			},
+		},
 	],
-	"hasCredential": [
+	hasCredential: [
 		{
 			"@type": "EducationalOccupationalCredential",
-			"credentialCategory": "degree",
-			"name": "Master of Science in Enterprise Information Systems",
-			"educationalLevel": "Master's Degree",
-			"recognizedBy": {
+			credentialCategory: "degree",
+			name: "Master of Science in Enterprise Information Systems",
+			educationalLevel: "Master's Degree",
+			recognizedBy: {
 				"@type": "EducationalOrganization",
-				"name": "Neapolis University"
-			}
+				name: "Neapolis University",
+			},
 		},
 		{
 			"@type": "EducationalOccupationalCredential",
-			"credentialCategory": "degree",
-			"name": "Bachelor of Engineering in Computer Science & Engineering",
-			"educationalLevel": "Bachelor's Degree",
-			"recognizedBy": {
+			credentialCategory: "degree",
+			name: "Bachelor of Engineering in Computer Science & Engineering",
+			educationalLevel: "Bachelor's Degree",
+			recognizedBy: {
 				"@type": "EducationalOrganization",
-				"name": "Technological Educational Institute of Western Macedonia"
-			}
+				name: "Technological Educational Institute of Western Macedonia",
+			},
 		},
 		{
 			"@type": "EducationalOccupationalCredential",
-			"credentialCategory": "certificate",
-			"name": "AWS Developing on AWS",
-			"recognizedBy": {
+			credentialCategory: "certificate",
+			name: "AWS Developing on AWS",
+			recognizedBy: {
 				"@type": "Organization",
-				"name": "Amazon Web Services"
-			}
+				name: "Amazon Web Services",
+			},
 		},
 		{
 			"@type": "EducationalOccupationalCredential",
-			"credentialCategory": "certificate",
-			"name": "Java & Spring Academy",
-			"recognizedBy": {
+			credentialCategory: "certificate",
+			name: "Java & Spring Academy",
+			recognizedBy: {
 				"@type": "Organization",
-				"name": "Athens Tech College"
-			}
-		}
+				name: "Athens Tech College",
+			},
+		},
 	],
-	"knowsAbout": [
+	knowsAbout: [
 		"Computer Science",
 		"Software Engineering",
 		"Enterprise Information Systems",
 		"Software Architecture",
 		"Algorithms",
-		"Data Structures"
-	]
+		"Data Structures",
+	],
 };
 ---
 <MainGridLayout title={pageTitle} description={pageDescription}>
 	<Fragment slot="head">
 		<!-- SEO Meta Tags -->
 		<meta name="keywords" content={keywords} />
-		<link rel="canonical" href={Astro.site + "education/"} />
-		
+
 		<!-- Open Graph Enhanced -->
 		<meta property="og:type" content="profile" />
 		<meta property="profile:first_name" content="Alexandros" />

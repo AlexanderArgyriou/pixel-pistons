@@ -12,7 +12,8 @@ import { Icon } from "astro-icon/components";
 import { giscusConfig, licenseConfig } from "src/config";
 import ImageWrapper from "../../components/misc/ImageWrapper.astro";
 import PostMetadata from "../../components/PostMeta.astro";
-import { profileConfig, siteConfig } from "../../config";
+import { siteConfig } from "../../config";
+import { ownerIdentity } from "../../constants/seo";
 import { formatDateToYYYYMMDD } from "../../utils/date-utils";
 
 export async function getStaticPaths() {
@@ -40,7 +41,9 @@ const jsonLd = {
 	keywords: entry.data.tags,
 	author: {
 		"@type": "Person",
-		name: profileConfig.name,
+		name: ownerIdentity.name,
+		alternateName: ownerIdentity.alternateName,
+		sameAs: ownerIdentity.sameAs,
 		url: Astro.site,
 	},
 	datePublished: formatDateToYYYYMMDD(entry.data.published),

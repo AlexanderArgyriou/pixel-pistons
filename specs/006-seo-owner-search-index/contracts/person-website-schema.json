@@ -1,0 +1,38 @@
+{
+    "$comment": "Contract for the sitewide Person + WebSite JSON-LD emitted in every page's <head> via src/layouts/Layout.astro. Consumed by search engine crawlers (Google, Bing) for entity association.",
+    "person": {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Alex Argyriou",
+        "alternateName": [
+            "Alexandros Argyriou",
+            "Alexander Argyriou"
+        ],
+        "url": "https://pixel-pistons.com/",
+        "sameAs": [
+            "https://www.linkedin.com/in/alexander-argyriou/",
+            "https://github.com/AlexanderArgyriou"
+        ]
+    },
+    "website": {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Pixel Pistons",
+        "url": "https://pixel-pistons.com/",
+        "author": {
+            "@type": "Person",
+            "name": "Alexandros Argyriou",
+            "alternateName": [
+                "Alex Argyriou",
+                "Alexander Argyriou"
+            ]
+        }
+    },
+    "requiredFields": [
+        "name",
+        "alternateName",
+        "url",
+        "sameAs"
+    ],
+    "validation": "MUST pass https://validator.schema.org/ and Google Rich Results Test with zero errors."
+}
