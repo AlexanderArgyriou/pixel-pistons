@@ -83,7 +83,8 @@ public class PurchaseFlow extends Flow {
                 (ApprovalEvent event) -> ApprovalStatus.APPROVED.equals(event.decision()),
                 "approved", "rejected", ApprovalEvent.class
             ),
-            function("rejected", this::rejected),
+            function("rejected", this::rejected)
+                        .then(FlowDirectiveEnum.END),
             function("approved", this::approved),
             function("createSupplierOrder", this::createSupplierOrder),
             function("completePurchase", this::complete)
