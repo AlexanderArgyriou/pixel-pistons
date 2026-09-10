@@ -51,7 +51,7 @@ That's the part that usually causes pain, and it's exactly the part Quarkus Flow
 A `Flow` is a plain CDI bean, you extend `Flow` and return a `Workflow` descriptor 
 from `descriptor()`. At build time, the extension discovers every `Flow` subclass 
 on the classpath and registers it as a CDI bean, the same build time discovery mechanism Quarkus uses for 
-REST resources or Panache entities. That matters for two reasons: startup is fast because
+REST resources or Panache entities. That matters for a reason: startup is fast because
 nothing about the workflow's shape needs to be figured out at runtime.
 Here's the purchase flow from this project, trimmed slightly: 
 
